@@ -1,3 +1,3 @@
 const cars = ["Saab", "Volvo", "BMW"];
-cars[0] = "Ford";
+cars[1] = "Ford";
 console.log(cars);
