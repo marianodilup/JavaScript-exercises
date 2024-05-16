@@ -1,2 +1,2 @@
 const character = { name: "Jack Sparrow", age: 10 };
-character.age = 5;
+character.age = 25;
