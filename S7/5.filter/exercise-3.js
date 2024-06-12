@@ -6,9 +6,6 @@ const streamers = [
 ];
 
 const newArray = streamers.filter((streamer) => {
-  if (streamer.gameMorePlayed == "League of Legends") {
-    return streamer.name;
-  }
+  return streamer.gameMorePlayed === "League of Legends";
 });
 console.log(newArray);
-//No esta terminado
