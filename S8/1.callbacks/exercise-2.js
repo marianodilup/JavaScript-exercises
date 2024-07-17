@@ -1,11 +1,22 @@
-const confirmValue = confirm("Soy un texto");
-const propmt = prompt("Soy un texto");
+const userAnwsers = [];
 
-function confirmExample() {
-  confirm(confirmValue);
-}
-function promptExample() {
-  propmt(propmt);
+function confirmExample(description) {
+  return confirm(description);
 }
 
-//NO ESTA TERMINADO
+function promptExample(description) {
+  return prompt(description);
+}
+
+function father(description, callback) {
+  const result = callback(description);
+  userAnwsers.push(result);
+}
+
+// Ejecutar la función father varias veces con diferentes callbacks y descripciones
+father("¿Te gusta el helado?", confirmExample);
+father("¿Cómo te llamas?", promptExample);
+father("¿Te gusta bailar?", confirmExample);
+father("¿Cuántos años tienes", promptExample);
+
+console.log(userAnwsers);
