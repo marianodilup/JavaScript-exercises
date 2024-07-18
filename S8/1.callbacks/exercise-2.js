@@ -13,7 +13,6 @@ function father(description, callback) {
   userAnwsers.push(result);
 }
 
-// Ejecutar la función father varias veces con diferentes callbacks y descripciones
 father("¿Te gusta el helado?", confirmExample);
 father("¿Cómo te llamas?", promptExample);
 father("¿Te gusta bailar?", confirmExample);
